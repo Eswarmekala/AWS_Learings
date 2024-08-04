@@ -1,0 +1,5 @@
+cidr_blockvar = "10.0.0.0/16"
+dnsname = "true"
+publicsubnetcidrvar = "10.0.1.0/24"
+privitesubnetcidrvar = "10.0.2.0/24"
+igwroute = "0.0.0.0/0"
