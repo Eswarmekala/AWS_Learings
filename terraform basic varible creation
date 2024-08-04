@@ -1,0 +1,43 @@
+in variable we have 2 types in terrrafrom they are :
+input variables thesee are used passed to aws 
+eg :
+resource "aws_instance" "example" {
+  
+  ami = var.ami_value .
+}
+
+the varible neeed to define using keywoard called varible.
+eg:
+varible "instance_type"
+type = string
+default = "t2.micro"
+
+if dont want to use defult varible then we need to pass using terrafrom apply command.
+
+output varibles these are used get information 
+eg :
+output "public_ip"
+value = resource.resourcename 
+
+
+we can organize our code by using below :
+
+
+we use provider.tf to pass provider details
+
+eg:
+
+provider "aws" {
+region = "us-east-1"
+aws_screat key = "klldld"
+}
+
+your main.ft will have your terrafrom code 
+
+then your input varibles wii be input.fr
+also output varibles in output.tf
+these names also can we changed
+
+
+to write terrafrom dynamically we use tf.vars to pass varibles.
+
